@@ -1,5 +1,5 @@
 <?php
-include('index.php');
+include('start.php');
 $db = new DB();
 
 $allCategories = Category::getAllWithItemsNumberDescending($db);
@@ -18,7 +18,7 @@ $categoriesToShow = [];
 <body>
     <div style="margin:0 auto; width:900px;padding:0px">
         <div style="display: block;height: 30px;width:100%; text-align:center; clear:both; margin: 20px 0px 20px 0px">
-            <a href="project_tree.php" style="line-height:30px; background:#cfcfcf;float:left; margin-right:20px;text-decoration:none; color: #000; padding:5px 15px 5px 15px">Category Tree</a>
+            <a href="index.php" style="line-height:30px; background:#cfcfcf;float:left; margin-right:20px;text-decoration:none; color: #000; padding:5px 15px 5px 15px">Category Tree</a>
             <a href="categories_items_number.php" style="line-height:30px; background:#cfcfcf;float:left; margin-left: 20px;text-decoration:none; color: #000; padding:5px 15px 5px 15px">Category Items Number</a>
         </div>
         <div style="display: block;clear:both; width:100%; margin:10px 0px 10px 0px;">
